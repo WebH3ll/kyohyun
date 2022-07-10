@@ -78,13 +78,13 @@
                             b:
                             echo "
                                 <div style='float:right;'>
-                                <a href='write.php?Idx=$idx'> 수정 </a>
-                                <a href='confirmDel.php?Idx=$idx'> 삭제 </a>
+                                <a href='write.php?Idx=$idx' class='btn btn-warning'> Edit </a>
+                                <a href='confirmDel.php?Idx=$idx' class='btn btn-warning'> Delete </a>
                                 </div>
                             ";
                         }
                     ?>
-                    <a href="list.php"> 목록 </a>
+                    <a href="list.php" class="btn btn-warning"> List </a>
                 </td>
             </tr>
         </table>

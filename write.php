@@ -24,48 +24,47 @@
     }
 ?>
 
-<form action="writePost.php" method="POST" onsubmit="return chkFrm();">
-    <input type="hidden" name="Idx" value="<? if (isset($idx)) { echo $idx; }?>">
+<div style="width:800px; float:center; margin:0 auto;" class="border">
+    <form action="writePost.php" method="POST" onsubmit="return chkFrm();">
+        <input type="hidden" name="Idx" value="<? if (isset($idx)) { echo $idx; }?>">
 
-    <table width="800" border="1">
-        <tr>
-            <th> ID </th>
-            <td> <?=$_SESSION['isLoginId']?> </td>
-        </tr>
+        <table border="1" class="table w-auto">
+            <tr>
+                <th style="width:200px;"> ID </th>
+                <td style="width:600px;"> <?=$_SESSION['isLoginId']?> </td>
+            </tr>
 
-        <tr>
-            <th> Title </th>
-            <td> <input type="text" name="Title" id="Title" style="width:100%" value="<? if (isset($result)) {echo $result['Title'];}?>"> </td>
-        </tr>
+            <tr>
+                <th> Title </th>
+                <td> <input type="text" name="Title" id="Title" style="width:100%" value="<? if (isset($result)) {echo $result['Title'];}?>"> </td>
+            </tr>
 
-        <tr>
-            <th> Memo </th>
-            <td>
-                <textarea name="Memo" id="Memo" style="width:100%; height:300px;"><? if (isset($result)) {echo $result['Memo'];}?></textarea>
-            </td>
-        </tr>
+            <tr>
+                <th> Memo </th>
+                <td>
+                    <textarea name="Memo" id="Memo" style="width:100%; height:300px;"><? if (isset($result)) {echo $result['Memo'];}?></textarea>
+                </td>
+            </tr>
 
-        </tr>
-            <th> Is Secret? </th>
-            <td> <input type="checkbox" name="IsSecret" id="IsSecret" value="0" onclick="IsChecked();" unchecked> </td>
-        </tr>
+            </tr>
+                <th> Is Secret? </th>
+                <td> <input type="checkbox" name="IsSecret" id="IsSecret" value="0" onclick="IsChecked();" unchecked> </td>
+            </tr>
 
-        <tr id="Password">
-        </tr>
+            <tr id="Password">
+            </tr>
 
-        <tr>
-            <td colspan="2">
-                <div style="text-align:center;">
-                    <input type="submit" class="btn btn-warning" value="Save">
-                </div>
-            </td>
-        </tr>
-    </table>
-</form>
-
-
-<div id='PassForm'>
+            <tr>
+                <td colspan="2">
+                    <div style="text-align:center;">
+                        <input type="submit" class="btn btn-warning" value="Save">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
 </div>
+
 </body>
 </html>
 
