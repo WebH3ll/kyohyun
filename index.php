@@ -17,6 +17,8 @@
     <h1> Hello I'm fine </h1>
 
 	<?php
+		session_start();
+		
 		ini_set('display_errors', '0');
 
 		if ($_SESSION['isLoginId']) {

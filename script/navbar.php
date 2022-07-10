@@ -13,11 +13,15 @@
         </button>-->
         <div style="float:right; padding-right:30px;"><!-- class="collapse navbar-collapse" id="navbarNav">-->
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-            <a class="nav-link" href="list.php">List</a>
-            </li>
+
             
             <? if ($_SESSION['isLoginId']) { ?>
+                <li class="nav-item">
+                <a class="nav-link" href="getIP.php">IP</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="list.php">List</a>
+                </li>
                 <li class="nav-item">
                 <a class="nav-link" href="config.php">Config</a>
                 </li>
