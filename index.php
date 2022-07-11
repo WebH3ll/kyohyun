@@ -18,7 +18,7 @@
 
 	<?php
 		session_start();
-		
+
 		ini_set('display_errors', '0');
 
 		if ($_SESSION['isLoginId']) {
@@ -43,5 +43,8 @@
 			</form>";
 	}
 	?>
+	
+	<button class="btn btn-warning" onclick="location.href='download.php'">Download Image</button>
+
 </body>
 </html>
