@@ -41,10 +41,11 @@
 			<form action='upload.php' method='POST' enctype='multipart/form-data'>
 				<input type='file' name='upload'> <input type='submit' class='btn btn-warning' value='Upload'>
 			</form>";
+
+		echo "<button class='btn btn-warning' onclick='location.href=`download.php`'>Download Image</button>";
 	}
 	?>
-	
-	<button class="btn btn-warning" onclick="location.href='download.php'">Download Image</button>
+
 
 </body>
 </html>

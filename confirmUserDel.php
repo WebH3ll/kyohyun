@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirm Delete</title>
+    <title>Confirm User Delete</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 	<link href="css/navbar.css" rel="stylesheet" />
     <style>
@@ -23,18 +23,13 @@
         $idx = $_GET['Idx'];
     ?>
 
-    <form action="del.php" method="POST">
+    <form action="deleteUser.php" method="POST">
         <input type="hidden" name="Idx" value="<?=$idx?>">
 
         <table border="1" width="500" class="table w-auto">
             <tr>
-                <th colspan=2> Do you really want to delete post <?=$idx?>? </th>
+                <th colspan=2> Do you really want to delete User <?=$idx?>? </th>
             </tr>
-            <tr>
-                <th> Password </th>
-                <td> <input type="password" name="Password" placeholder="Password" size="20"> </td>
-            </tr>
-
             <tr>
                 <td colspan="2">
                     <div style="text-align:center;">

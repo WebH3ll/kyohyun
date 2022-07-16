@@ -59,7 +59,7 @@
         <td> </td>
         <td> </td>
         <td> </td>
-        <td> <button href="write.php" type="button" class="btn btn-warning" style="float:right;" onclick="location.href='write.php'">Write</button> </td>
+        <td> <button type="button" class="btn btn-warning" style="float:right;" onclick="location.href='write.php'">Write</button> </td>
     </tr>
     </table>
 </body>
