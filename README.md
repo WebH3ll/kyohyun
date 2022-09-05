@@ -14,4 +14,4 @@
 
 ## 🧃 OWASP Juice Shop CTF (8.1 ~ 8.30)
 
-[link](https://www.notion.so/OWASP-Juice-Shop-551abed36e3044fa81659890f4be2363)
+[link](https://congruous-jeep-e43.notion.site/OWASP-Juice-Shop-551abed36e3044fa81659890f4be2363)
